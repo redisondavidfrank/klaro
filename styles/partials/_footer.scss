@@ -1,0 +1,349 @@
+/* mobile-styling-start */
+.footer {
+  margin-top: 2.5rem;
+  background-color: $black;
+  &__main-container {
+    margin: 0 1rem;
+  }
+  &__logo {
+    visibility: hidden;
+  }
+  &__title {
+    font-family: avenir-bold;
+    font-size: 2.3rem;
+    color: $white;
+    margin: 0;
+    padding: 3rem 0 1.5rem 0;
+  }
+
+  &__image-container {
+    display: flex;
+    justify-content: space-between;
+    width: 135px;
+    padding: 0 0 1rem 0;
+  }
+  &__richard {
+    display: flex;
+    flex-direction: column;
+    &--title {
+      @include mobile-subheader;
+      color: $white;
+      margin: 0;
+      &-one {
+        @include mobile-subheader;
+        color: $white;
+        margin: 0;
+        padding-bottom: 1rem;
+      }
+    }
+    &--address {
+      @include mobile-paragraph;
+      color: $white;
+      margin: 0;
+      &-one {
+        @include mobile-paragraph;
+        color: $white;
+        margin: 0;
+        padding: 0 0 1rem 0;
+      }
+    }
+    &--email {
+      margin: 0 0 1.5rem 0;
+      &-link {
+        @include mobile-paragraph;
+        text-decoration: none;
+        color: $white;
+        margin: 0;
+      }
+      &-link:hover {
+        color: $silver;
+      }
+    }
+  }
+
+  &__marsha {
+    display: flex;
+    flex-direction: column;
+    &--title {
+      @include mobile-subheader;
+      color: $white;
+      margin: 0;
+      &-one {
+        @include mobile-subheader;
+        color: $white;
+        margin: 0;
+        padding: 0 0 1rem 0;
+      }
+    }
+    &--address {
+      @include mobile-paragraph;
+      color: $white;
+      margin: 0;
+      &-one {
+        @include mobile-paragraph;
+        color: $white;
+        margin: 0;
+        padding: 0 0 1rem 0;
+      }
+    }
+    &--email {
+      margin: 0 0 1.5rem 0;
+      &-link {
+        @include mobile-paragraph;
+        text-decoration: none;
+        color: $white;
+        margin: 0;
+      }
+      &-link:hover {
+        color: $silver;
+      }
+    }
+  }
+
+  &__russel {
+    display: flex;
+    flex-direction: column;
+    &--title {
+      @include mobile-subheader;
+      color: $white;
+      margin: 0;
+      &-one {
+        @include mobile-subheader;
+        color: $white;
+        margin: 0;
+        padding: 0 0 1rem 0;
+      }
+    }
+    &--address {
+      @include mobile-paragraph;
+      color: $white;
+      margin: 0;
+      &-one {
+        @include mobile-paragraph;
+        color: $white;
+        margin: 0;
+        padding: 0 0 1rem 0;
+      }
+    }
+    &--email {
+      margin: 0 0 1.5rem 0;
+      &-link {
+        text-decoration: none;
+        @include mobile-paragraph;
+        color: $white;
+        margin: 0;
+      }
+      &-link:hover {
+        color: $silver;
+      }
+    }
+  }
+
+  &__copyright {
+    @include mobile-paragraph;
+    color: $white;
+    margin: 0;
+    width: 66.68vw;
+    padding: 0 0 1.5rem 0;
+  }
+}
+/* mobile-styling-end */
+
+/* tablet-styling-start */
+@include medium {
+  .footer {
+    background-color: $black;
+    &__main-container {
+      margin: 0 1.5rem;
+    }
+    &__title {
+      @include header-title;
+      padding: 3rem 0 2.5rem 0;
+    }
+    &__header {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__image-container {
+      padding: 3rem 0 2.5rem 0;
+      align-items: center;
+    }
+    &__logo {
+      padding: 3rem 0 2.5rem 0;
+      visibility: visible;
+      margin-left: 136px;
+    }
+    &__names {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__richard {
+      &--title {
+        @include header-subheader;
+      }
+      &--address {
+        @include tab-desk-paragraph;
+        width: 225px;
+      }
+      &--email {
+        margin: 0;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        padding: 0 0 2.5rem 0;
+      }
+    }
+
+    &__marsha {
+      &--title {
+        @include header-subheader;
+      }
+      &--address {
+        @include tab-desk-paragraph;
+        width: 225px;
+      }
+      &--email {
+        margin: 0;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        padding: 0 0 2.5rem 0;
+      }
+    }
+
+    &__russel {
+      &--title {
+        @include header-subheader;
+      }
+      &--address {
+        @include tab-desk-paragraph;
+        width: 225px;
+      }
+      &--email {
+        margin: 0;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        padding: 0 0 2.5rem 0;
+      }
+    }
+
+    &__copyright {
+      font-size: 0.8125rem;
+      line-height: 1.25rem;
+      padding: 0 0 2.5rem 0;
+    }
+  }
+}
+/* tablet-styling-end */
+
+/* desktop-styling-start */
+@include large {
+  .footer {
+    background-color: $black;
+    &__main-container {
+      margin: 0 11.25rem;
+    }
+    &__title {
+      font-family: avenir-bold;
+      font-size: 2.25rem;
+      width: 220px;
+      padding: 3rem 0 3.5rem 0;
+    }
+    &__header {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__image-container {
+      padding: 3rem 0 3.5rem 0;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    &__facebook {
+      padding: 0 2rem;
+    }
+
+    &__logo {
+      padding: 3.5rem 0 3rem 32rem;
+      visibility: visible;
+      margin: 0;
+    }
+    &__names {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    &__richard {
+      &--title {
+        @include header-subheader;
+        &-one {
+          @include tab-desk-paragraph;
+          padding-bottom: 1.5rem;
+          padding-right: 3.25rem;
+        }
+      }
+      &--address {
+        @include tab-desk-paragraph;
+        &-one {
+          @include tab-desk-paragraph;
+          padding-bottom: 1.5rem;
+        }
+      }
+      &--email {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        padding: 0 0 2.5rem 0;
+      }
+    }
+
+    &__marsha {
+      &--title {
+        @include header-subheader;
+        &-one {
+          @include tab-desk-paragraph;
+          padding-bottom: 1.5rem;
+          padding-right: 3.25rem;
+        }
+      }
+      &--address {
+        @include tab-desk-paragraph;
+        &-one {
+          @include tab-desk-paragraph;
+          padding-bottom: 1.5rem;
+        }
+      }
+      &--email {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        padding: 0 0 2.5rem 0;
+      }
+    }
+
+    &__russel {
+      &--title {
+        @include header-subheader;
+        &-one {
+          @include tab-desk-paragraph;
+          padding-bottom: 1.5rem;
+          padding-right: 3.25rem;
+        }
+      }
+      &--address {
+        @include tab-desk-paragraph;
+        &-one {
+          @include tab-desk-paragraph;
+          padding-bottom: 1.5rem;
+        }
+      }
+      &--email {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        padding: 0 0 2.5rem 0;
+      }
+    }
+    &__copyright {
+      font-size: 0.8125rem;
+      line-height: 1.25rem;
+      padding: 0 0 2.5rem 0;
+    }
+  }
+}
+/* desktop-styling-end */

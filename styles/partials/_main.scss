@@ -1,0 +1,123 @@
+/* mobile-styling-start */
+.main {
+  margin: 0 1rem;
+  &__title {
+    @include mobile-header;
+    margin: 2rem 0 1.5rem 0;
+  }
+  &__container-image {
+    height: 45.3125vw;
+    margin: 0 0 1.5rem 0;
+  }
+  &__image {
+    height: 100%;
+    width: 100%;
+  }
+  &__sub-title {
+    @include mobile-subheader;
+    margin: 0 2.2rem 2rem 0;
+  }
+  &__name {
+    @include mobile-subheader;
+    margin: 0 0 2.5rem 0;
+  }
+  &__musicians {
+    @include mobile-subheader;
+    margin: 0 0 1.5rem 0;
+  }
+  &__description--one {
+    @include mobile-paragraph;
+    margin: 0 0 1.5rem 0;
+  }
+  &__description--two {
+    @include mobile-paragraph;
+    margin: 0 0 2.5rem 0;
+  }
+}
+/* mobile-styling-end */
+
+/* tablet-styling-start */
+@include medium {
+  .main {
+    margin: 0 1.5rem;
+
+    &__title {
+      @include header-title;
+      margin: 2rem 0 1.5rem 0;
+    }
+    &__container-image {
+      height: 47.136vw;
+      margin: 0 0 1.5rem 0;
+    }
+    &__image {
+      height: 100%;
+      width: 100%;
+    }
+    &__sub-title {
+      @include header-subtitle;
+      margin: 0 0 2rem 0;
+      width: 91vw;
+    }
+    &__name {
+      @include header-subheader;
+      margin: 0 0 2.5rem 0;
+    }
+    &__musicians {
+      @include header-subtitle;
+      margin: 0 0 1.5rem 0;
+    }
+    &__description-container {
+      display: flex;
+    }
+    &__description--one {
+      @include tab-desk-paragraph;
+      margin: 0 1.5rem 2.5rem 0;
+    }
+    &__description--two {
+      @include tab-desk-paragraph;
+      margin: 0 0 2.5rem 0;
+    }
+  }
+}
+/* tablet-styling-end */
+
+/* desktop-styling-start */
+@include large {
+  .main {
+    margin: 0;
+    &__title {
+      @include header-title;
+      margin: 3rem 0 3rem 11.25rem;
+    }
+    &__container-image {
+      height: 31.25vw;
+      margin: 0 17rem 3rem 17rem;
+    }
+    &__sub-title {
+      @include header-subtitle;
+      margin: 0 0 2.5rem 17rem;
+      width: 59vw;
+    }
+    &__name {
+      @include header-subheader;
+      margin: 0 0 3.5rem 17rem;
+    }
+    &__musicians {
+      @include header-subtitle;
+      margin: 0 0 2rem 17rem;
+    }
+    &__description-container {
+      display: flex;
+      margin: 0 17rem 3rem 17rem;
+    }
+    &__description--one {
+      @include tab-desk-paragraph;
+      margin: 0 2.5rem 0 0;
+    }
+    &__description--two {
+      @include tab-desk-paragraph;
+      margin: 0;
+    }
+  }
+}
+/* desktop-styling-end */

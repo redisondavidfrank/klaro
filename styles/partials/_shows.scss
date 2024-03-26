@@ -1,0 +1,286 @@
+/* mobile-styling-start */
+.shows {
+  margin: 0 1rem;
+  &__title {
+    @include mobile-header;
+    color: $black;
+    margin: 2rem 0 2.5rem 0;
+  }
+  &__header-container {
+    display: none;
+  }
+
+  &__one-container {
+    &--date-label {
+      font-family: avenir-demi;
+      font-size: 0.8125rem;
+      color: $silver;
+      margin: 1rem 0 1rem 0;
+    }
+    &--date {
+      @include mobile-subheader;
+      margin: 0 0 1.5rem 0;
+    }
+    &--venue-label {
+      font-family: avenir-demi;
+      font-size: 0.8125rem;
+      color: $silver;
+      margin: 0 0 1rem 0;
+    }
+    &--venue {
+      @include mobile-paragraph;
+      margin: 0 0 1.5rem 0;
+    }
+    &--location-label {
+      font-family: avenir-demi;
+      font-size: 0.8125rem;
+      color: $silver;
+      margin: 0 0 1rem 0;
+    }
+    &--location {
+      @include mobile-paragraph;
+      margin: 0 0 2rem 0;
+    }
+
+    &--button {
+      font-family: avenir-demi;
+      font-size: 0.8125rem;
+      width: 288px;
+      height: 48px;
+      color: $white;
+      background-color: $black;
+      border-radius: 0.3125rem;
+      border: none;
+      &:hover {
+        background-color: black;
+        box-shadow: 2px 2px 20px;
+      }
+    }
+
+    &--button-container {
+      padding-bottom: 1rem;
+      border-bottom: 1px solid $silver;
+    }
+  }
+}
+/* mobile-styling-end */
+
+/* tablet-styling-start */
+@include medium {
+  .shows {
+    margin: 0 1.5rem;
+    &__title {
+      @include header-title;
+      color: $black;
+      margin: 2rem 0 2rem 0;
+    }
+    &__header-container {
+      display: flex;
+      justify-content: space-between;
+      font-family: avenir-demi;
+      font-size: 12px;
+      color: $silver;
+      &--date {
+        width: 8.375rem;
+        margin: 0;
+        align-self: center;
+      }
+      &--venue {
+        width: 8.375rem;
+        margin: 0;
+        align-self: center;
+      }
+      &--location {
+        width: 8.375rem;
+        margin: 0;
+        align-self: center;
+      }
+      &--button-header {
+        visibility: hidden;
+        font-family: avenir-demi;
+        font-size: 0.8125rem;
+        width: 160px;
+        height: 48px;
+        color: $white;
+        background-color: $black;
+        border-radius: 0.3125rem;
+        border: none;
+      }
+    }
+
+    &__one-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid $silver;
+      &--date-label {
+        display: none;
+        font-family: avenir-demi;
+        font-size: 0.8125rem;
+        color: $silver;
+        margin: 1rem 0 1rem 0;
+      }
+      &--date {
+        font-family: avenir-demi;
+        width: 8.375rem;
+        font-size: 0.875rem;
+        margin: 0;
+      }
+      &--venue-label {
+        display: none;
+        font-family: avenir-demi;
+        font-size: 0.8125rem;
+        color: $silver;
+        margin: 0;
+      }
+      &--venue {
+        font-family: avenir-regular;
+        width: 8.375rem;
+        font-size: 0.8125rem;
+        margin: 0;
+      }
+      &--location-label {
+        display: none;
+        font-family: avenir-demi;
+        font-size: 0.8125rem;
+        color: $silver;
+        margin: 0;
+      }
+      &--location {
+        font-family: avenir-regular;
+        font-size: 0.8125rem;
+        width: 8.375rem;
+        margin: 0;
+      }
+
+      &--button-container {
+        padding: 1rem 0;
+        border: none;
+      }
+
+      &--button {
+        font-family: avenir-demi;
+        font-size: 0.8125rem;
+        width: 160px;
+        height: 48px;
+        color: $white;
+        background-color: $black;
+        border-radius: 0.3125rem;
+        border: none;
+      }
+    }
+  }
+}
+/* tablet-styling-end */
+
+/* desktop-styling-start */
+@include large {
+  .shows {
+    margin: 0 11.25rem;
+    &__container {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__container-all {
+      width: 804px;
+    }
+    &__title {
+      @include header-title;
+      color: $black;
+      margin: 3rem 0 0 0;
+    }
+    &__header-container {
+      display: flex;
+      justify-content: space-between;
+      font-family: avenir-demi;
+      align-items: flex-end;
+      margin-top: 1rem;
+      font-size: 12px;
+      color: $silver;
+      &--date {
+        margin: 0;
+        align-self: flex-end;
+      }
+      &--venue {
+        margin: 0;
+        align-self: flex-end;
+      }
+      &--location {
+        margin: 0;
+        align-self: flex-end;
+      }
+      &--button-header {
+        visibility: hidden;
+        font-family: avenir-demi;
+        font-size: 0.8125rem;
+        width: 160px;
+        height: 48px;
+        color: $white;
+        background-color: $black;
+        border-radius: 0.3125rem;
+        border: none;
+      }
+    }
+    &__one-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid $silver;
+      &--date-label {
+        display: none;
+        font-family: avenir-demi;
+        font-size: 0.8125rem;
+        color: $silver;
+        margin: 1rem 0 1rem 0;
+      }
+      &--date {
+        font-family: avenir-demi;
+        font-size: 0.875rem;
+        margin: 0;
+      }
+      &--venue-label {
+        display: none;
+        font-family: avenir-demi;
+        font-size: 0.8125rem;
+        color: $silver;
+        margin: 0;
+      }
+      &--venue {
+        font-family: avenir-regular;
+        font-size: 0.8125rem;
+        margin: 0;
+      }
+      &--location-label {
+        display: none;
+        font-family: avenir-demi;
+        font-size: 0.8125rem;
+        color: $silver;
+        margin: 0;
+      }
+      &--location {
+        font-family: avenir-regular;
+        font-size: 0.8125rem;
+        margin: 0;
+      }
+      &--button-container {
+        padding: 1.5rem 0 1rem 0;
+        border: none;
+      }
+      &--button {
+        font-family: avenir-demi;
+        font-size: 0.8125rem;
+        width: 160px;
+        height: 48px;
+        color: $white;
+        background-color: $black;
+        border-radius: 0.3125rem;
+        border: none;
+        &:hover {
+          background-color: black;
+          box-shadow: 2px 2px 20px;
+        }
+      }
+    }
+  }
+}
+/* desktop-styling-start */

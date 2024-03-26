@@ -1,0 +1,63 @@
+// mobile mixins
+
+@mixin mobile-header {
+  font-family: avenir-bold;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+@mixin mobile-subheader {
+  font-family: avenir-demi;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+}
+
+@mixin mobile-paragraph {
+  font-family: avenir-regular;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+}
+
+@mixin mobile-labels {
+  font-family: avenir-demi;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+}
+
+@mixin header-banner {
+  height: 80px;
+  width: 100vw;
+  background-color: $black;
+}
+
+// tablet & desktop mixins
+
+@mixin hero-header {
+  font-family: avenir-bold;
+  font-size: 3.75rem;
+  line-height: 4.25rem;
+}
+
+@mixin header-title {
+  font-family: avenir-bold;
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+}
+
+@mixin header-subtitle {
+  font-family: avenir-bold;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+@mixin header-subheader {
+  font-family: avenir-demi;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+@mixin tab-desk-paragraph {
+  font-family: avenir-regular;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}

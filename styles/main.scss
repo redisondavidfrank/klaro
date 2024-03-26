@@ -1,0 +1,26 @@
+/* universal-reset */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+// Partials imported from my partials folder for styling
+@import "./partials/mixins";
+@import "./partials/breakpoints";
+@import "./partials/colors";
+@import "./partials/fonts";
+@import "./partials/navigation";
+@import "./partials/hero";
+@import "./partials/main";
+@import "./partials/photogallery";
+@import "./partials/footer";
+@import "./partials/comments";
+@import "./partials/hero-shows";
+@import "./partials/shows";

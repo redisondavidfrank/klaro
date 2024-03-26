@@ -1,0 +1,152 @@
+/* mobile-styling-start */
+.header {
+  @include header-banner;
+  &__logo-container {
+    display: flex;
+    justify-content: center;
+  }
+  &__logo {
+    width: 6.25rem;
+    padding: 16px 0px;
+  }
+  &__menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    color: $silver;
+    font-family: avenir-demi;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  &__border-one:hover {
+    color: $white;
+    border-bottom: 5px solid $white;
+  }
+  &__border-two:hover {
+    color: $white;
+    border-bottom: 5px solid $white;
+  }
+  #bio {
+    color: $white;
+  }
+  #bio-border {
+    border-bottom: 5px solid $white;
+  }
+  #shows {
+    color: $white;
+  }
+  #shows-border {
+    border-bottom: 5px solid $white;
+  }
+  &__menu-item--one,
+  &__menu-item--two {
+    text-align: center;
+    text-decoration: none;
+    color: $silver;
+    padding-bottom: 0.25rem;
+    font-size: 0.875rem;
+    width: 50vw;
+    display: block;
+    &:hover {
+      color: $white;
+    }
+  }
+}
+/* mobile-styling-end */
+
+/* tablet-styling-start */
+@include medium {
+  .header {
+    height: 80px;
+    width: 100vw;
+    background-color: $black;
+    &__medium {
+      display: flex;
+      width: 50vw;
+      align-items: center;
+      height: 100%;
+    }
+    &__logo {
+      width: 6.25rem;
+      margin: 0 1.5rem;
+      padding: 0;
+    }
+    &__border-one,
+    &__border-two {
+      border-bottom: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 80px;
+      border-bottom: 4px solid transparent;
+      margin: 0 1.75rem;
+    }
+    &__border-bottom:hover {
+      border-bottom: 4px solid $white;
+    }
+    &__menu {
+      display: flex;
+      justify-content: space-around;
+      width: auto;
+    }
+    &__menu-item--one,
+    &__menu-item--two {
+      font-size: 6.25rem;
+      width: 5rem;
+      padding: 0;
+      font-size: 1rem;
+    }
+  }
+}
+/* tablet-styling-end */
+
+/* desktop-styling-start */
+@include large {
+  .header {
+    height: 80px;
+    width: 100vw;
+    background-color: $black;
+    &__medium {
+      display: flex;
+      width: 50vw;
+      align-items: center;
+      height: 100%;
+    }
+    &__logo {
+      width: 6.25rem;
+      margin: 0 0 0 11.25rem;
+      padding: 0;
+    }
+    &__border-one,
+    &__border-two {
+      border-bottom: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 80px;
+      border-bottom: 4px solid transparent;
+      margin: 0;
+    }
+
+    &__border-one {
+      margin: 0 56px;
+    }
+
+    &__border-bottom:hover {
+      border-bottom: 4px solid $white;
+    }
+    &__menu {
+      display: flex;
+      justify-content: space-around;
+      width: auto;
+    }
+    &__menu-item--one,
+    &__menu-item--two {
+      width: 5rem;
+      padding: 0;
+      font-size: 1rem;
+    }
+  }
+}
+/* desktop-styling-start */
